@@ -1,0 +1,12 @@
+@model System.Collections.Generic.IList<string>
+
+
+<h1>Here is a list sent from the controller Test</h1>
+<div class="row container-fluid">
+    <ul class="list-group col-md-4">
+    @foreach (string item in Model)
+    {
+        <li class="list-group-item">@item</li>
+    }
+</ul>
+</div>

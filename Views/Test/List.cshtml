@@ -1,0 +1,19 @@
+@model System.Collections.Generic.IList<FirstWebApp.Model.Student>
+
+    <table class="table table-bordered table-hover">
+        <hr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Score</td>
+        </hr>
+        @foreach (FirstWebApp.Model.Student st in Model)
+        {
+        <tr>
+            <td>@st.Id</td>
+            <td>@st.Name</td>
+            <td>@st.Score</td>
+        </tr>
+        }
+
+    </table>
+
